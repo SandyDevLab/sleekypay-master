@@ -1,11 +1,8 @@
 {
-  "homepage": "http://sandyfurin.github.io/sleekypay-master",
   "name": "sleekypay",
   "version": "1.0.0",
   "description": "Fake payment gateway integration",
   "scripts": {
-    "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
     "website:dev": "parcel ./src/index.html ./src/assets/*",
     "website:build": "parcel build ./src/index.html ./src/assets/*",
     "functions:dev": "concurrently --kill-others \"parcel ./src/functions/*.ts --out-dir dist/functions --target node\" \"parcel ./src/functions/bin/*.ts --out-dir dist/functions/bin --target node\"",
