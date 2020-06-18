@@ -1,5 +1,5 @@
 
-import { Context, Callback, APIGatewayEvent } from "netlify-lambda";
+import { Context, Callback, APIGatewayEvent } from "aws-lambda";
 import fetch from "node-fetch";
 
 interface SnipcartPaymentMethod {

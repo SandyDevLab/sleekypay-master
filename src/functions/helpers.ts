@@ -1,4 +1,4 @@
-import { APIGatewayEvent, APIGatewayProxyResult } from "netlify-lambda";
+import { APIGatewayEvent, APIGatewayProxyResult } from "aws-lambda";
 
 export function getResultPayload(
   event: APIGatewayEvent,

@@ -1,6 +1,6 @@
 
 import uuid from "uuid"
-import { APIGatewayEvent, APIGatewayProxyResult } from "netlify-lambda";
+import { APIGatewayEvent, APIGatewayProxyResult } from "aws-lambda";
 import { getResultPayload } from "../helpers";
 
 
