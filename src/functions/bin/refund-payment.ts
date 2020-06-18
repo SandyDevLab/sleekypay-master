@@ -1,4 +1,4 @@
-import { APIGatewayEvent, Context, Callback } from "aws-lambda";
+import { APIGatewayEvent, Context, Callback } from "netlify-lambda";
 import uuid from 'uuid';
 
 interface RefundPayload {
