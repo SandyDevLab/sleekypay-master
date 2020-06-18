@@ -12,7 +12,8 @@ function App() {
     debugger;
     const jwt = new URLSearchParams(window.location.search).get('publicToken')
     const API_URL = process.env.API_URL || 'https://localhost:12666';
-    const response = await fetch(`${API_URL}/api/public/custom-payment-gateway/payment-session?publicToken=${jwt}`);
+    const response = await fetch(`https://payment.snipcart.com/api/public/custom-payment-gateway/payment-session?publicToken=${jwt}`);
+    //const response = await fetch(`${API_URL}/api/public/custom-payment-gateway/payment-session?publicToken=${jwt}`);
 
     if (!response.ok) {
       setStatus(Status.Failed)
