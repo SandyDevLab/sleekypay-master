@@ -4,6 +4,7 @@ import { Status, PaymentSession } from "./interfaces";
 import Form from "./components/Form";
 
 function App() {
+  debugger;
   const [paymentSession, setPaymentSession] = React.useState<PaymentSession>();
   const [status, setStatus] = React.useState<Status>(Status.Loading)
 
